@@ -67,7 +67,7 @@ class student_details:
 
 g1=student_details("Day",2345667,"TU01-SC211-1376/2016")
 g1.Display()
-
+print("==="*10)
 #Patient name,age,phone,town
 #Display Patient Information
 
@@ -80,13 +80,31 @@ class patient:
 
     def Display_Patient_Info(self):
         print(f"My name is {self.name} am {self.age} years old.\nMy phone number is {self.phone}.\nMy home town is {self.town}")
+#
+# w1=patient("Betty",32,"07838888283","Sagalla")
+# w1.Display_Patient_Info()
+#
+# g3=patient("Edith",19,"086767664","Nanyuki")
+# g3.Display_Patient_Info()
 
-w1=patient("Betty",32,"07838888283","Sagalla")
-w1.Display_Patient_Info()
+#Create Patient Health Information
+#weight,blood_Pressure,blood group,blood_sugar
 
-g3=patient("Edith",19,"086767664","Nanyuki")
-g3.Display_Patient_Info()
+class Patient_Health_Info(patient):
+    def __init__(self,name,age,phone,town,weight,BP,Blood_Group,Blood_Sugar):
+        super().__init__(name,age,phone,town)
+        self.weight=weight
+        self.BP=BP
+        self.Blood_Group=Blood_Group
+        self.Blood_Sugar=Blood_Sugar
+    def output(self):
+        print(f"W: {self.weight},\nBP: {self.BP},\nBlood_Group: {self.Blood_Group},\nBlood_Sugar: {self.Blood_Sugar}.")
 
+P1=Patient_Health_Info("Betty",19,"078965756","Nanyuki","234 pounds",126,"B+","0.89")
+P1.Display_Patient_Info()
+P1.output()
+
+#
 
 
 
