@@ -80,15 +80,6 @@ class patient:
 
     def Display_Patient_Info(self):
         print(f"My name is {self.name} am {self.age} years old.\nMy phone number is {self.phone}.\nMy home town is {self.town}")
-#
-# w1=patient("Betty",32,"07838888283","Sagalla")
-# w1.Display_Patient_Info()
-#
-# g3=patient("Edith",19,"086767664","Nanyuki")
-# g3.Display_Patient_Info()
-
-#Create Patient Health Information
-#weight,blood_Pressure,blood group,blood_sugar
 
 class Patient_Health_Info(patient):
     def __init__(self,name,age,phone,town,weight,BP,Blood_Group,Blood_Sugar):
