@@ -7,10 +7,6 @@ class Dog(object):
 
     def FoodType(self,food):
         print(f"{self.name} eats {food}")
-# if __name__=="__main__":
-#     d1=Dog("Scooby",3)
-#     d1.DogName()
-#     d1.FoodType("Fish")
 
 class JackRusselTerrier(Dog):
     def __init__(self,name,age):
