@@ -68,8 +68,24 @@ class student_details:
 g1=student_details("Day",2345667,"TU01-SC211-1376/2016")
 g1.Display()
 
+#Patient name,age,phone,town
+#Display Patient Information
 
+class patient:
+    def __init__(self,name,age,phone,town):
+        self.name=name
+        self.age=age
+        self.phone=phone
+        self.town=town
 
+    def Display_Patient_Info(self):
+        print(f"My name is {self.name} am {self.age} years old.\nMy phone number is {self.phone}.\nMy home town is {self.town}")
+
+w1=patient("Betty",32,"07838888283","Sagalla")
+w1.Display_Patient_Info()
+
+g3=patient("Edith",19,"086767664","Nanyuki")
+g3.Display_Patient_Info()
 
 
 
