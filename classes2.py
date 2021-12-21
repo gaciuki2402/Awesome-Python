@@ -8,7 +8,7 @@ class Reptile(object):
         print(f"{self.name}\n{self.age}\n{self.type}")
 
 class fish(Reptile):
-    def __int__(self,name="Dolphin",age="40 years",type="orca",weight="500kgs",colour="greyish",length="4.0m"):
+    def __init__(self,name="Dolphin",age="40 years",type="orca",weight="500kgs",colour="greyish",length="4.0m"):
         super().__init__(name,age,type)
         self.weight=weight
         self.colour=colour
