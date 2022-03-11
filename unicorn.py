@@ -10,7 +10,7 @@ class Animal(object):
         print(f"{self.Type}'s best foods are:\n\t{Food}")
 
     def AmountOfFeed(self,Amount):
-        print(f"{self.Type} eats {Amount} of hay or any other feed")
+        print(f"{self.Type} eats {Amount} of hay or any other feed per day.")
 
 class AmericanQuarterHorse(Animal):
     def __init__(self,Type,Age):
